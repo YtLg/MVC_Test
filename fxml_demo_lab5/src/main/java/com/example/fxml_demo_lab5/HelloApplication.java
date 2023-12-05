@@ -16,14 +16,7 @@ public class HelloApplication extends Application {
 
         controller.init(model);
 
-       if(controller.returner() == null)
-       {
-           System.out.println("There aint shit there");
-       }
-       else if(controller.returner() == model)
-       {
-           System.out.println("It's fuckin' there mate");
-       }
+
         System.out.println(model.getCounter());
 
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("hello-view.fxml"));
